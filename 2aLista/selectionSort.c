@@ -13,7 +13,7 @@ void selectionSort(int *L, int l, int r){
         return;
     }
 
-    for(j = l+1; j <= r-2; j++ ){
+    for(j = l+1; j <= r; j++ ){
         if(less(L[j],L[menor])){
             menor = j;
         }
@@ -36,7 +36,7 @@ void main(){
         }
         cont++;
     }
-    selectionSort(listaNumeros, 0, qtdNumeros);
+    selectionSort(listaNumeros, 0, qtdNumeros-2);
 
     printf("\n");
 
